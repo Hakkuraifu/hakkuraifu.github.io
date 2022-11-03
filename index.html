@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Hakkuraifu</title>
+    <link rel="icon" type="image/x-icon" href="CSS/Image/favicon.png">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" media="screen">
+    <script src="JS/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit:wght@500;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css">
+
+    <body onload="alert('This website is currently being build so you can maybe enconter some bugs !')">
+
+        <script>
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.style.backgroundImage = "url('CSS/Image/w2.jpg')";
+                document.getElementsByClassName("MsoNormal").style.color = "white";
+            }
+            
+        </script>
+        <div class="Menu">
+            <ul>
+                <li><a href="#" onclick="unfade('Home'), fade('Cred'), fade('Down'), fade('Cont')">HOME</a></li>
+                <li><a href="#" onclick="unfade('Down'), fade('Cred'), fade('Home'), fade('Cont')">CATEGORY</a></li>
+                <li><a href="#" onclick="fade('Home'), unfade('Cred'), fade('Down'), fade('Cont')">CREDITS</a></li>
+            </ul>
+        </div>
+    
+        <div class="Title">
+            <h1 class="TitleSite" data-text="HAKKURAIFU">HAKKURAIFU</h1>
+        </div>
+    
+        <div class="SubTitle">
+            <h2 style="font-size: 20px;">Because we love Open-Source thing</h2>
+        </div>
+
+        <div id="Home">
+          <div class="Who">
+            <h1 class="whoh">What is Hakkuraifu ?</h1>
+            <p>
+                Hakkuraifu is a team created by Nazky (me). </br> 
+              </br>
+                In this site you can found every release made by the team, with the original creator and the code source of the project.</br>
+              </br>
+              the main goal of hakkuraifu is to make available open source projects for the safety of users but also creators, here you can download different projects and have access to the source code to help creators or just check if the project is safety to use.
+            </p>
+        </div>
+
+        <div class="Join">
+          <h1 class="JU">Join us</h1>
+          <div>
+            <a href="#" onclick="alert('soon')"><span>Discord</span></a>
+            <a href="#" value="New Tab" onclick="window.open('https://twitter.com/HakkuOfficial');"><span>Twitter</span></a>
+            <a href="#" onclick="alert('soon')"><span>Telegram</span></a>
+          </div>
+        </div>
+        </div>
+
+        <div id="Cred" style="display: none;">
+          <div class="Credit">
+            <h2>Web Devlopers</h2>
+            <div class="Wdev">
+              <div class="Box" value="New Tab" onclick="window.open('https://twitter.com/NazkyYT');">
+                <img class="bimg" src="CSS/Image/Credits/Nazky.png">
+                <a class="span" > Nazky <i class="fa-regular fa-circle-check" style="color:#00ff0d ;" title="Devloper valited by Hakkuraifu."></i></a>
+              </div>
+              <div class="Box" value="New Tab" onclick="window.open('https://twitter.com/StretchEcho');">
+                <img class="bimg" style="width: 14%;" src="CSS/Image/Credits/EchoScretch.png">
+                <a class="span" > Echo Stretch <i class="fa-regular fa-circle-check" style="color:#00ff0d ;" title="Devloper valited by Hakkuraifu."></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Credit">
+            <h2>Software Devlopers</h2>
+            <div class="sdev">
+              <div class="Box" value="New Tab" onclick="window.open('https://twitter.com/NazkyYT');">
+                <img class="bimg" src="CSS/Image/Credits/Nazky.png">
+                <a class="span" >Nazky <i class="fa-regular fa-circle-check" style="color:#00ff0d ;" title="Devloper related to Hakkuraifu."></i></a>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+        <div id="Down" style="display: none;">
+        <div class="Cate">
+          <h1 class="JU">Category</h1>
+          <div>
+            <a onclick="unfade('Play'), fade('Xbox'),fade('PC')"><span>Playstation</span></a>
+            <a onclick="unfade('Xbox'), fade('Play'),fade('PC')"><span>Xbox</span></a>
+            <a onclick="unfade('PC'), fade('Play'), fade('Xbox')"><span>PC</span></a>
+            <a onclick="alert('soon !')"><span>Android</span></a>
+            <a onclick="alert('soon !')"><span>IOS</span></a>
+          </div>
+        </div>
+
+          <div class="Category">
+
+            <!--PlayStation-->
+
+            <div class="Play" id="Play" style="display: none;">
+              <div class="pscat" id="pscat">
+                <h2> <i class="fa-brands fa-playstation"></i> PlayStation </h2>
+                <div id="Playstation4" class="Box"> 
+                  <h3 onclick="unfade('ps5'), fade('pscat')"> <i class="fa-brands fa-playstation"></i> PS5 </i> </h3>
+                </div>
+                <div id="Playstation4" class="Box"> 
+                  <h3 onclick="unfade('ps4'), fade('pscat')"> <i class="fa-brands fa-playstation"></i> PS4 </i> </h3>
+                </div>
+                <div id="Playstation3" class="Box"> 
+                  <h3 onclick="alert('soon')"> <i class="fa-brands fa-playstation"></i> PS3 </i></h3>
+                </div>
+              </div>
+
+              <div class="ps4" id="ps4" style="display: none;">
+                <h2> <i class="fa-brands fa-playstation"></i> PlayStation 4 </h2>
+                <div id="Playstation4" class="Box"> 
+                  <h3 onclick="unfade('pscat'), fade('ps4')"> <i class="fa-solid fa-backward"></i> </i> </h3>
+                </div>
+                <div id="Playstation4" class="Box"> 
+                  <h3 value="New Tab" onclick="window.open('https://ps4xploit.zd.lu/');" style="font-family:'Courier New', Courier, monospace ;"> <i class="fa-brands fa-playstation"></i> Official Host </i> </h3>
+                </div>
+                <div id="Playstation3" class="Box"> 
+                  <h3 value="New Tab" onclick="window.open('https://es7in1.site/');" style="font-family:'Courier New', Courier, monospace ;"> <i class="fa-brands fa-playstation"></i> EchoStretch Host </i> </h3>
+                </div>
+              </div>
+
+              <div class="ps5" id="ps5" style="display: none;">
+                <h2> <i class="fa-brands fa-playstation"></i> PlayStation 5 </h2>
+                <div id="Playstation4" class="Box"> 
+                  <h3 onclick="unfade('pscat'), fade('ps5')"> <i class="fa-solid fa-backward"></i> </i> </h3>
+                </div>
+                <div id="Playstation3" class="Box"> 
+                  <h3 value="New Tab" onclick="window.open('https://es7in1.site/');" style="font-family:'Courier New', Courier, monospace ;"> <i class="fa-brands fa-playstation"></i> EchoStretch Host </i> </h3>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+            <!--XBOX-->
+
+            <div class="Xbox" id="Xbox" style="display: none;">
+              <h2> <i class="fa-brands fa-xbox"></i></i> XBOX </h2>
+              <div id="Playstation4" class="Box"> 
+                <h3 onclick="alert('soon')"> <i class="fa-brands fa-xbox"></i></i> Xbox One </i> </h3>
+              </div>
+              <div id="Playstation3" class="Box"> 
+                <h3 onclick="alert('soon')"> <i class="fa-brands fa-xbox"></i></i> Xbox 360 </i></h3>
+              </div>
+            </div>
+
+            <!--PC-->
+
+            <div class="PC" id="PC" style="display: none;">
+              <h2> <i class="fa-solid fa-computer"></i> PC </h2>
+              <div id="Playstation4" class="Box"> 
+                <h3 onclick="alert('soon')"> <i class="fa-solid fa-computer"></i> Repack </i> </h3>
+              </div>
+              <div id="Playstation4" class="Box"> 
+                <h3 value="New Tab" onclick="window.open('https://github.com/Hakkuraifu');"> <i class="fa-solid fa-computer"></i> Github </i> </h3>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="disclamer" align="center">
+      <style>
+          [data-custom-class='body'], [data-custom-class='body'] * {
+                  background: transparent !important;
+                }
+        [data-custom-class='title'], [data-custom-class='title'] * {
+                  font-family: Arial !important;
+        font-size: 26px !important;
+        color: #000000 !important;
+                }
+        [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
+                  font-family: Arial !important;
+        color: #bdbdbd !important;
+        font-size: 14px !important;
+                }
+        [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
+                  font-family: Arial !important;
+        font-size: 19px !important;
+        color: #888888 !important;
+                }
+        [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
+                  font-family: Arial !important;
+        font-size: 17px !important;
+        color: #000000 !important;
+                }
+        [data-custom-class='body_text'], [data-custom-class='body_text'] * {
+                  color: #ffffff !important;
+        font-size: 14px !important;
+        font-family: Arial !important;
+                }
+        [data-custom-class='link'], [data-custom-class='link'] * {
+                  color: #3030F1 !important;
+        font-size: 14px !important;
+        font-family: Arial !important;
+        word-break: break-word !important;
+                }
+        </style>
+        
+              <div data-custom-class="body">
+              <div><div align="center" class="MsoNormal" data-custom-class="title" style="text-align: center; line-height: 1.5;"><a name="_4r5vko5di6yg"></a><strong><span style="line-height: 150%; font-size: 26px; text-shadow: 1px 1px 10px #ffffff;">DISCLAIMER</span></strong></div><div align="center" class="MsoNormal" style="text-align:center;line-height:150%;"><a name="_l2jmcqu2bv4x"></a></div><div align="center" class="MsoNormal" data-custom-class="subtitle" style="text-align: left; line-height: 150%;"><br></div><div align="center" class="MsoNormal" data-custom-class="subtitle" style="text-align: left; line-height: 150%;"><span style="color: rgb(127,127,127); font-size: 15px; text-align: justify;"></bdt></span></div><div class="MsoNormal" style="text-align: justify; line-height: 1.5;"><br></div><div class="MsoNormal" style="text-align: justify; line-height: 1.5;"><br></div><div class="MsoNormal" data-custom-class="heading_1"><a name="_xs0r05tcjblb"></a><strong><span style="line-height: 115%; font-size: 19px;">WEBSITE DISCLAIMER</span></strong></div></div><div style="line-height: 1.2;"><br></div><div><div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;"><span style="color: rgb(89, 89, 89); font-size: 15px;">The information provided by <bdt class="block-container question question-in-editor" data-id="1e91c6ac-db3b-ab40-09dc-333e7d471e6c" data-type="question">Hakkuraifu</bdt> on <bdt class="block-component"></bdt><bdt class="question">hakkuraifu.ezyro.com</bdt><bdt class="block-component"></bdt></bdt> is for general informational purposes only. All information on <span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>the Site<bdt class="block-component"></bdt></bdt></span> is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>the Site<bdt class="block-component"></bdt></bdt></span></span>. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>THE SITE<bdt class="block-component"></bdt></bdt></span></span> OR RELIANCE ON ANY INFORMATION PROVIDED ON <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>THE SITE<bdt class="block-component"></bdt></bdt></span></span></span>. YOUR USE OF <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>THE SITE<bdt class="block-component"></bdt></bdt></span></span></span> AND YOUR RELIANCE ON ANY INFORMATION ON <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt>THE SITE<bdt class="block-component"></bdt></bdt></span></span></span> IS SOLELY AT YOUR OWN RISK.</span></div></div><div style="line-height: 1.2;"><br></div><div><div class="MsoNormal"><a name="_x1u8x12nt00e"></a></div><bdt class="block-container if" data-type="if" id="25d6783f-eaa7-3465-7bd8-31e107cc0931"><bdt data-type="conditional-block"><bdt class="block-component" data-record-question-key="external_disclaimer_option" data-type="statement"></bdt><bdt data-type="body"><div class="MsoNormal" data-custom-class="heading_1"><strong><span style="line-height: 115%; font-size: 19px;">EXTERNAL LINKS
+        DISCLAIMER<br></span></strong></div></bdt></bdt></bdt></div><div style="line-height: 1.2;"><br></div><div><bdt class="block-container if" data-type="if"><bdt data-type="conditional-block"><bdt data-type="body"><div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;"><span style="color: rgb(39, 39, 39); font-size: 15px;"><span style="color: rgb(37, 37, 37); font-size: 15px;"><bdt class="block-component"></bdt>The Site<bdt class="block-component"></bdt></bdt></span></span><span style="font-size: 15px;"><span style="color: rgb(37, 37, 37);"> may contain <span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="color: rgb(89, 89, 89); font-size: 15px;"><bdt class="block-component"></bdt><bdt class="block-component"></bdt></bdt></span></span>links</span></span><span style="color: rgb(89, 89, 89); font-size: 15px;"> to other
+        websites or content belonging to or originating from third parties or links to
+        websites and features in banners or other advertising. Such external links area
+        not investigated, monitored, or checked for accuracy, adequacy, validity, reliability,
+        availability or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR
+        ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION
+        OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR
+        FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR
+        IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.</span></div></bdt></bdt></bdt></div><div style="line-height: 1.2;"><br></div><div><bdt class="block-container if" data-type="if"><bdt class="statement-end-if-in-editor" data-type="close"></bdt></bdt><div class="MsoNormal"><a name="_wfmrqujylbbj"></a></div><bdt class="block-container if" data-type="if" id="098cd9ba-027e-0afb-ec22-41e16cb68d79"><bdt data-type="conditional-block"><bdt class="block-component" data-record-question-key="professional_disclaimer_option" data-type="statement"></bdt></bdt></div><div><bdt class="block-component"></bdt></bdt></div><div><bdt data-type="conditional-block" style="text-align: start;"><bdt data-type="body"><div class="MsoNormal" style="text-align: justify;"><bdt class="block-component"></bdt></bdt></span></bdt></bdt></bdt></bdt></bdt></span></bdt></bdt></bdt></div><style>
+              ul {
+                list-style-type: square;
+              }
+              ul > li > ul {
+                list-style-type: circle;
+              }
+              ul > li > ul > li > ul {
+                list-style-type: square;
+              }
+              ol li {
+                font-family: Arial ;
+              }
+            </style>
+              </div>
+    </div>
+    <br>
+    <div class="copyright" align="center">
+      <script>
+        document.write('&copy;' );
+        document.write(' 2021 - ');
+        document.write(new Date().getFullYear());
+        document.write(' Hakkuraifu  - All Rights Reserved.');
+        document.write('<br/><br/>Last Updated : ');
+        document.write(document.lastModified);
+      </script>
+    </div>     
+  </div>
+      
+</html>

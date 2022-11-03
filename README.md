@@ -1,2 +1,2 @@
-# hakkuraifu.github.io
-official hakkuraifu website
+# Hakkuraifu
+official website of Hakkuraifu

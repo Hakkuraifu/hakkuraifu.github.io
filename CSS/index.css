@@ -1,0 +1,817 @@
+/*Fonts*/
+
+@font-face {
+  font-family: 'Play Great Font';
+  src: url('Fonts/PlayGreatBold-8MgEZ.ttf');
+}
+
+@font-face {
+  font-family: 'XBOX Original Font';
+  src: url('Fonts/XboxOriginalBold-YzPYy.ttf');
+}
+
+/*Body*/
+body{
+    color: white;
+    background: no-repeat center center fixed;
+    background-image: url("../CSS/Image/w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Web Title*/
+
+.TitleSite{
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    background: -webkit-linear-gradient(#c700c7,rgb(133, 0, 138));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+    
+}
+
+.SubTitle{
+    align-items: center;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 2px 2px 8px #8600d3;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.TitleSite::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: 2px;
+    text-shadow: -2px 0 #570057;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+  .TitleSite::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    text-shadow: -2px 0 #910091, 2px 2px #360036;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+  }
+  
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(92px, 9999px, 3px, 0);
+      transform: skew(0.32deg);
+    }
+    5% {
+      clip: rect(42px, 9999px, 89px, 0);
+      transform: skew(0.47deg);
+    }
+    10% {
+      clip: rect(44px, 9999px, 28px, 0);
+      transform: skew(0.94deg);
+    }
+    15% {
+      clip: rect(50px, 9999px, 48px, 0);
+      transform: skew(0.02deg);
+    }
+    20% {
+      clip: rect(93px, 9999px, 69px, 0);
+      transform: skew(0.01deg);
+    }
+    25% {
+      clip: rect(22px, 9999px, 74px, 0);
+      transform: skew(0.7deg);
+    }
+    30% {
+      clip: rect(87px, 9999px, 6px, 0);
+      transform: skew(0.85deg);
+    }
+    35% {
+      clip: rect(25px, 9999px, 32px, 0);
+      transform: skew(0.18deg);
+    }
+    40% {
+      clip: rect(65px, 9999px, 5px, 0);
+      transform: skew(0.5deg);
+    }
+    45% {
+      clip: rect(63px, 9999px, 27px, 0);
+      transform: skew(0.75deg);
+    }
+    50% {
+      clip: rect(44px, 9999px, 62px, 0);
+      transform: skew(0.17deg);
+    }
+    55% {
+      clip: rect(30px, 9999px, 92px, 0);
+      transform: skew(0.46deg);
+    }
+    60% {
+      clip: rect(6px, 9999px, 4px, 0);
+      transform: skew(0.02deg);
+    }
+    65% {
+      clip: rect(7px, 9999px, 70px, 0);
+      transform: skew(0.42deg);
+    }
+    70% {
+      clip: rect(56px, 9999px, 56px, 0);
+      transform: skew(0.17deg);
+    }
+    75% {
+      clip: rect(30px, 9999px, 65px, 0);
+      transform: skew(0.22deg);
+    }
+    80% {
+      clip: rect(70px, 9999px, 54px, 0);
+      transform: skew(0.45deg);
+    }
+    85% {
+      clip: rect(39px, 9999px, 24px, 0);
+      transform: skew(0.81deg);
+    }
+    90% {
+      clip: rect(73px, 9999px, 17px, 0);
+      transform: skew(0.4deg);
+    }
+    95% {
+      clip: rect(17px, 9999px, 25px, 0);
+      transform: skew(0.43deg);
+    }
+  }
+  @keyframes glitch-anim2 {
+    0% {
+      clip: rect(71px, 9999px, 65px, 0);
+      transform: skew(0.33deg);
+    }
+    5% {
+      clip: rect(65px, 9999px, 63px, 0);
+      transform: skew(0.72deg);
+    }
+    10% {
+      clip: rect(11px, 9999px, 32px, 0);
+      transform: skew(0.6deg);
+    }
+    15% {
+      clip: rect(91px, 9999px, 59px, 0);
+      transform: skew(0.78deg);
+    }
+    20% {
+      clip: rect(76px, 9999px, 9px, 0);
+      transform: skew(0.57deg);
+    }
+    25% {
+      clip: rect(70px, 9999px, 98px, 0);
+      transform: skew(0.1deg);
+    }
+    30% {
+      clip: rect(77px, 9999px, 75px, 0);
+      transform: skew(0.4deg);
+    }
+    35% {
+      clip: rect(3px, 9999px, 61px, 0);
+      transform: skew(0.92deg);
+    }
+    40% {
+      clip: rect(24px, 9999px, 12px, 0);
+      transform: skew(0.33deg);
+    }
+    45% {
+      clip: rect(9px, 9999px, 8px, 0);
+      transform: skew(0.66deg);
+    }
+    50% {
+      clip: rect(100px, 9999px, 39px, 0);
+      transform: skew(0.76deg);
+    }
+    55% {
+      clip: rect(62px, 9999px, 20px, 0);
+      transform: skew(0.5deg);
+    }
+    60% {
+      clip: rect(17px, 9999px, 48px, 0);
+      transform: skew(0.33deg);
+    }
+    65% {
+      clip: rect(56px, 9999px, 100px, 0);
+      transform: skew(0.9deg);
+    }
+    70% {
+      clip: rect(57px, 9999px, 42px, 0);
+      transform: skew(0.51deg);
+    }
+    75% {
+      clip: rect(24px, 9999px, 15px, 0);
+      transform: skew(0.34deg);
+    }
+    80% {
+      clip: rect(39px, 9999px, 15px, 0);
+      transform: skew(0.68deg);
+    }
+    85% {
+      clip: rect(34px, 9999px, 32px, 0);
+      transform: skew(0.54deg);
+    }
+    90% {
+      clip: rect(95px, 9999px, 51px, 0);
+      transform: skew(0.73deg);
+    }
+    95% {
+      clip: rect(35px, 9999px, 60px, 0);
+      transform: skew(0.38deg);
+    }
+  }
+  @keyframes glitch-skew {
+    0% {
+      transform: skew(-3deg);
+    }
+    10% {
+      transform: skew(2deg);
+    }
+    20% {
+      transform: skew(-3deg);
+    }
+    30% {
+      transform: skew(1deg);
+    }
+    40% {
+      transform: skew(2deg);
+    }
+    50% {
+      transform: skew(3deg);
+    }
+    60% {
+      transform: skew(-3deg);
+    }
+    70% {
+      transform: skew(3deg);
+    }
+    80% {
+      transform: skew(0deg);
+    }
+    90% {
+      transform: skew(-2deg);
+    }
+  }
+
+
+
+/*Menu*/
+
+.Menu {
+    text-align: center;
+    align-items: center;
+    background-color: rgba(43, 43, 43, 0.685);
+    padding: 0.2%;
+    width: 40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.Menu li{
+    display: inline;
+}
+
+.Menu li a{
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.Menu li a:hover{
+    background-color: rgb(78, 0, 65);
+    border-radius: 15px;
+}
+
+.Menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/*Disclamer*/
+
+.disclamer{
+    background-color: rgba(43, 43, 43, 0.685);
+    border-radius: 15px;
+    bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    left: 2%;
+    right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 10%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/*Desc*/
+
+.Who {
+  align-items: center;
+  text-align: center;
+  background-color: rgba(43, 43, 43, 0.685);
+  font-family: 'Fjalla One', sans-serif;
+  border-radius: 15px;
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.whoh {
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+  
+}
+
+.Who p {
+  text-align: center;
+  align-items: center;
+  padding-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*Join*/
+
+.Join{
+  align-items: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  border-radius: 15px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(43, 43, 43, 0.685);
+}
+
+.Join .JU{
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.Join div {
+  display: inline;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Icons */
+
+.Join a {
+  color: #fff;
+  background: #7f00d3;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-family: fontawesome;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 28px;
+  padding-top: 2.5%;
+  margin: 0 5px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Join a:hover {
+  background: #5016ad;
+}
+
+/* pop-up text */
+
+.Join a span {
+  color: #666;
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+.Join a span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+/* text pops up when icon is in hover state */
+
+.Join a:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* font awesome icons */
+
+.Join a:nth-of-type(1):before {
+  content: "\f392";
+}
+.Join a:nth-of-type(2):before {
+  content: "\f099";
+}
+.Join a:nth-of-type(3):before {
+  content: "\f2c6";
+}
+
+/*Category*/
+
+.Cate{
+  align-items: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  border-radius: 15px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(43, 43, 43, 0.685);
+}
+
+.Cate .JU{
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.Cate div {
+  display: inline;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Icons */
+
+.Cate a {
+  color: #fff;
+  background: #9e9e9e3b;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-family: fontawesome;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 28px;
+  padding-top: 2.5%;
+  margin: 0 5px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Cate a:hover {
+  background: #b6b6b698;
+  cursor: pointer;
+}
+
+/* pop-up text */
+
+.Cate a span {
+  color: #666;
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+.Cate a span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+/* text pops up when icon is in hover state */
+
+.Cate a:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* font awesome icons */
+
+.Cate a:nth-of-type(1):before {
+  content: "\f3df";
+}
+.Cate a:nth-of-type(2):before {
+  content: "\f412";
+}
+.Cate a:nth-of-type(3):before {
+  content: "\f390";
+}
+.Cate a:nth-of-type(4):before {
+  content: "\f17b";
+}
+.Cate a:nth-of-type(5):before {
+  content: "\f179";
+}
+
+/* Credit */
+
+
+.Credit {
+  background-color: rgba(43, 43, 43, 0.685);
+  border-radius: 15px;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: table;
+  padding-left: 0.2%;
+}
+
+.Credit .Box {
+  background-color: rgba(255, 255, 255, 0.295);
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 45%;
+  display: inline-table;
+  padding-right: 2.5%;
+}
+
+.Credit .Box:hover{
+  background-color: rgba(91, 38, 175, 0.671);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.Credit .Box:active{
+  border-color: #360036;
+  border-width: 15px;
+  border-radius: 90px;
+}
+
+.Credit .Box .bimg{
+  width: 20%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.Credit .Box .span{
+  text-align: center;
+  align-items: center;
+  position:relative;
+  font-size: 1.2vw;
+  bottom: 1.2vw;
+  font-family: 'Kanit', sans-serif;
+}
+
+.Credit h2{
+  text-align: center;
+  align-items: center;
+  
+}
+/* Play */
+
+.Play{
+  background-color: rgba(43, 43, 43, 0.685);
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.Play h2{
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.Play .Box h3 {
+  font-family: 'Play Great Font';
+  text-align: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 4%;
+}
+
+.Play .Box{
+  background-color: rgba(255, 255, 255, 0.295);
+  text-align: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 45%;
+  display: inline-table;
+  padding-right: 2.5%;
+  cursor: pointer;
+}
+
+.Play .Box:hover{
+  background-color: rgba(15, 50, 102, 0.671);
+  border-radius: 30px;
+}
+
+/* Xbox */
+
+.Xbox{
+  background-color: rgba(43, 43, 43, 0.685);
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.Xbox h2{
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.Xbox .Box h3 {
+  font-family: 'XBOX Original Font';
+  text-align: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 4%;
+}
+
+.Xbox .Box{
+  background-color: rgba(255, 255, 255, 0.295);
+  text-align: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 45%;
+  display: inline-table;
+  padding-right: 2.5%;
+  cursor: pointer;
+}
+
+.Xbox .Box:hover{
+  background-color: rgba(38, 175, 61, 0.671);
+  border-radius: 30px;
+}
+
+/* PC */
+
+.PC{
+  background-color: rgba(43, 43, 43, 0.685);
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.PC h2{
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.PC .Box h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 4%;
+}
+
+.PC .Box{
+  background-color: rgba(255, 255, 255, 0.295);
+  text-align: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 45%;
+  display: inline-table;
+  padding-right: 2.5%;
+  cursor: pointer;
+}
+
+.PC .Box:hover{
+  background-color: rgba(185, 185, 185, 0.671);
+  border-radius: 30px;
+}
